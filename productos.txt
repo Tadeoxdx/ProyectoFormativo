@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Look - Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        #logo {
+            width: 150px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        #productos-header {
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .product {
+            display: inline-block;
+            width: 18%;
+            margin: 1%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            position: relative;
+        }
+        footer input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            max-width: 80%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><img id="logo" src="img/black-logo.png" alt="Trendy Look"></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+        </nav>
+        <div></div>
+    </header>
+
+    <div id="productos-header">Estos son nuestros productos</div>
+
+    <div class="product-list">
+        <div class="product">
+            <img src="img/producto1.jpg" alt="Producto 1">
+            <h3>Camisa c1</h3>
+            <p>Camisa de 7 botones color ceniza.</p>
+            <p>Precio: 80.00 Bs</p>
+        </div>
+        <div class="product">
+            <img src="img/producto2.jpg" alt="Producto 2">
+            <h3>Camisa c4</h3>
+            <p>Camisa de 7 botones color rosa.</p>
+            <p>Precio: 80.00 Bs</p>
+        </div>
+        <div class="product">
+            <img src="img/producto3.jpg" alt="Producto 3">
+            <h3>Chaqueta jean negro</h3>
+            <p>Chaqueta juvenil estilo jean negra.</p>
+            <p>Precio: 120.00 Bs</p>
+        </div>
+        <div class="product">
+            <img src="img/producto4.jpg" alt="Producto 4">
+            <h3>Chaqueta de cuero negro</h3>
+            <p>Chaqueta negra de cuero juvenil.</p>
+            <p>Precio: 350.00 Bs</p>
+        </div>
+        <div class="product">
+            <img src="img/producto5.jpg" alt="Producto 5">
+            <h3>Chaqueta jean azul claro </h3>
+            <p>Chaqueta jean claro casual</p>
+            <p>Precio: 200.00 Bs</p>
+        </div>
+        <div class="product">
+            <img src="img/producto6.jpg" alt="Producto 6">
+            <h3>Pantalon jean Cenisa</h3>
+            <p>Pantalon yoger color cenisa ajustada</p>
+            <p>Precio: 150.00 Bs</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Suscríbete a nuestras novedades</p>
+        <input type="email" placeholder="Ingresa tu correo electrónico">
+    </footer>
+</body>
+</html>

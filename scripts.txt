@@ -1,0 +1,27 @@
+let carrito = [];
+let total = 0;
+
+function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('lista-carrito');
+    listaCarrito.innerHTML = '';
+    
+    carrito.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
+        listaCarrito.appendChild(li);
+    });
+    
+    total = carrito.reduce((sum, item) => sum + item.precio, 0);
+    document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Formulario enviado correctamente!');
+    // Aquí puedes agregar el código para enviar el formulario a un servidor
+});

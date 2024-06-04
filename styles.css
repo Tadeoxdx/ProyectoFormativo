@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left, .header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.carrito-icono {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.carrito-productos {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.carrito-productos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrito-productos ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el slider */
+#slider {
+    margin-top: 70px; /* Ajustar según el tamaño del header */
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la sección de productos */
+#productos {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.producto {
+    width: calc(25% - 20px); /* Ajusta el tamaño de los productos */
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 100%; /* Ajusta el tamaño de las imágenes de los productos */
+    height: auto;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
